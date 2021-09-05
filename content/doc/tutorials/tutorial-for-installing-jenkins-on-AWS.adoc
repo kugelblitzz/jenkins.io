@@ -276,6 +276,13 @@ use the following command to perform a quick software update:
 [ec2-user ~]$ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 ----
 
+* Enable EPEL repository on Amazon Linux:
+
+[source,bash]
+----
+[ec2-user ~]$ amazon-linux-extras install epel -y
+----
+
 [source,bash]
 ----
 [ec2-user ~]$ sudo yum upgrade
